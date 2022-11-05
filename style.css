@@ -1,0 +1,230 @@
+@import url("https://fonts.google.com/specimen/Inter");
+
+
+:root{
+    font-size: --15px;
+
+}
+
+html, body{
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+.header {
+    
+    padding: 0%;
+    display:flex ;
+    align-content: center;
+    justify-content: center;
+    gap: 48rem;
+    margin: 3rem;
+}
+.list{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(236, 13%, 42%);
+    margin-right: -53rem;
+}
+.mean-icon{
+    opacity: 0;
+}
+
+/*main-page*/
+
+
+.main-page{
+    margin: 2rem;
+    padding: 1rem;
+    background-color: white;
+}
+
+
+/*section-01*/
+
+.page01>.main-page{
+    display: flex;
+    gap: 3rem;
+
+}
+.image{
+    width: 64rem;
+    height: 25rem;
+    background-image: url("assets/images/image-web-3-desktop.jpg");
+    background-size: cover;
+}
+.lower{
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+  
+}
+.lower01,.lower02{
+    width: 30rem;
+    height: 15rem;
+}
+
+
+.lower01{
+    font-size: 71px;
+    font-weight: 400;
+    font-family: Inter;
+    
+}
+.lower02{
+    font-size: 20px;
+}
+.button{
+    margin-top: 2rem;
+}
+.button01{
+    width: 9rem;
+    padding: 1rem;
+    border: none;
+    color: hsl(36, 100%, 99%);
+    background-color: hsl(5, 85%, 63%);
+    transition: linear 0.8s;
+}
+.button01:hover{
+    cursor: pointer;
+    background-color:  hsl(240, 100%, 5%);
+
+}
+.second-part{
+    background-color:  hsl(240, 100%, 5%);
+    height: 528px;
+    padding: 2rem;
+    
+}
+.top{
+    font-size: 30px;
+    margin-bottom: 2rem;
+    color: hsl(35, 77%, 62%);
+}
+.top01{
+    color: hsl(36, 100%, 99%);
+}
+.paragraph{
+    color: hsl(233, 8%, 79%);
+    margin-top: 1rem;
+}
+.top01{
+    margin: 0%;
+    padding: 0%;
+}
+
+.ruler{
+    width: 206px;
+    margin: 3rem;
+}
+li:hover{
+color: hsl(5, 85%, 63%);
+cursor: pointer;
+}
+
+
+/*section02*/
+
+
+.section02{
+    margin-top: 6rem;
+}
+.lower-section{
+    display: flex;
+    gap: 2rem;
+}
+.sub-container{
+    display: flex;
+    gap: 2rem;
+}
+
+
+.lower-head{
+    color: hsl(233, 8%, 79%);
+    font-size: 47px;
+
+
+
+}
+.lower-head02{
+    font-weight: 800;
+    font-size: 20px;
+    margin-top: 1rem;
+}
+.para{
+    color: hsl(236, 13%, 42%);
+}
+
+
+
+
+/* =================================================================*/
+/*challenges*/
+.attribution{
+    text-align: center;
+    margin: 2rem;
+}
+
+
+/*responsive design */
+
+
+@media(max-width:500px){
+   .image{
+    width: 320px;
+    height: 280px;
+    background-image: url("assets/images/image-web-3-mobile.jpg");
+   }
+   .lower{
+    flex-direction: column;
+   }
+   .page01>.main-page{
+    flex-direction: column;
+    padding: 0;
+   }
+   .main-page{
+    margin: 0;
+    
+   }
+   .lower{
+    gap: 0rem;
+   }
+   .lower01{
+    width: 390px;
+    font-size: 56px;
+    font-weight: 200;
+
+   }
+   .lower02{
+    font-size: 19px;
+    width: 350px;
+   }
+
+   .ruler{
+    width:160px;
+   }
+
+   .lower-section{
+    flex-direction: column;
+   }
+   .list{
+    display: none;
+   }
+   .mean-icon{
+    opacity: 1;
+  
+    position: absolute;
+    top: 35%;
+    left: 89%;
+   }
+   .header{
+  
+    position: relative;
+}
+.icon{
+    margin-left: -15rem;
+}
+}
